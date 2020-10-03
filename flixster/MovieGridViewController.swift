@@ -19,6 +19,14 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        layout.minimumLineSpacing = 8 // controls spacing in between rows; measured in px
+        layout.minimumInteritemSpacing = 8 // controls spacing in between columns; measured in px
+        
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
+        layout.itemSize = CGSize(width: width, height: width*1.5)
 
         // Do any additional setup after loading the view.
         let url = URL(string: "https://api.themoviedb.org/3/movie/150540/similar?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
