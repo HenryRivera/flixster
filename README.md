@@ -19,7 +19,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### Notes
 Describe any challenges encountered while building the app.
-- Implementing the bonus feature was really rewarding! Looking forward to growing more as an iOS developer
+- Implementing the bonus feature was really rewarding! It felt very intuitive. Looking forward to growing more as an iOS developer
 
 ---
 
